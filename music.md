@@ -1,7 +1,6 @@
 ---
 layout: page
 permalink: /refs/music/
-title: Fav Music
 ---
 
 - 5 Seconds of Summer - [Teeth](https://www.youtube.com/watch?v=JWeJHN5P-E8)
