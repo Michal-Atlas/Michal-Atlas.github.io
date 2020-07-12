@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "I have a website now"
+title:  "Blog: I have a website now"
+categories: blog
 ---
 
 Welp, finally figured out why the GitHub site didn't work,

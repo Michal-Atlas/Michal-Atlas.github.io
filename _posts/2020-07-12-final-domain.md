@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Final Domain
+title: "Blog: Final Domain"
+categories: blog
 ---
 
 So, three (at least 2) Indians later,

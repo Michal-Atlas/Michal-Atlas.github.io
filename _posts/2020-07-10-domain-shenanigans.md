@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Domain Shenanigans
+title: "Blog: Domain Shenanigans"
+categories: blog
 ---
 
 Hm, strange, I expected the domain to be setup by now.
