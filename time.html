@@ -1,0 +1,30 @@
+---
+layout: page
+title: Time
+permalink: /time/
+---
+
+<div style="text-align: center; vertical-align: center">
+    <hr>
+    <div class="Timer"><span id="hourSpan"></span><span id="minuteSpan"></span><span id="secondSpan"></span>
+    </div>
+    <hr>
+</div>
+
+<script>
+let unifiedRay = ['0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'Θ', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.0', '.A', '.B', '.C', '.D', '.E', '.F', '.G', '.H', '.I', '.K', '.L', '.M', '.N', '.Θ', '.P', '.R', '.S', '.T', '.U', '.V', '.X', '.Y', '.Z', '.1', '.2', '.3', '.4', '.5', '.6', '.7', '.8', '.9'];
+
+var t = setInterval(UpdateTime, 1000);
+
+function UpdateTime() {
+    let time = new Date();
+    document.getElementById("hourSpan").innerHTML = unifiedRay[time.getHours()];
+    document.getElementById("minuteSpan").innerHTML = unifiedRay[time.getMinutes()];
+    document.getElementById("secondSpan").innerHTML = unifiedRay[time.getSeconds()];
+}
+</script>
+<style>
+    div.Timer span{
+        font-size: xx-large;
+    }
+</style>
