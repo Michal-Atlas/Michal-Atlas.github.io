@@ -6,7 +6,9 @@ permalink: /time/
 
 <div style="text-align: center; vertical-align: center">
     <hr>
-    <div class="Timer"><span id="hourSpan"></span><span id="minuteSpan"></span><span id="secondSpan"></span>
+    <div title="DayOfWeek | Day/Month.Quarter/Year" class="MATimer"><span id="MAWeekDay"></span> | <span id="MADay"></span>/<span id="MAMonth"></span>/<span id="MAYear"></span></div>
+    <hr>
+    <div title="Hour | Minute | Second" class="MATimer"><span id="MAHour"></span><span id="MAMinute"></span><span id="MASecond"></span>
     </div>
     <hr>
 </div>
@@ -18,13 +20,56 @@ var t = setInterval(UpdateTime, 1000);
 
 function UpdateTime() {
     let time = new Date();
-    document.getElementById("hourSpan").innerHTML = unifiedRay[time.getHours()];
-    document.getElementById("minuteSpan").innerHTML = unifiedRay[time.getMinutes()];
-    document.getElementById("secondSpan").innerHTML = unifiedRay[time.getSeconds()];
+    document.getElementById("MAHour").innerHTML = unifiedRay[time.getHours()];
+    document.getElementById("MAMinute").innerHTML = unifiedRay[time.getMinutes()];
+    document.getElementById("MASecond").innerHTML = unifiedRay[time.getSeconds()];
+
+    day = getDayOfYear()
+    if (day != 365){
+        document.getElementById("MAYear").innerHTML = time.getFullYear()-1970;
+        document.getElementById("MAMonth").innerHTML = Math.floor(day/28)+"."+Math.floor(day/7)%4;
+        document.getElementById("MADay").innerHTML = day%28;
+    }else{
+        document.getElementById("MAYear").innerHTML = "";
+        document.getElementById("MAMonth").innerHTML = "Firefly Festival";
+        document.getElementById("MADay").innerHTML = "";
+    }
+    switch(day%7){
+        case 0:
+            document.getElementById("MAWeekDay").innerHTML = "Mun";
+            break;
+        case 1:
+            document.getElementById("MAWeekDay").innerHTML = "Tas";
+            break;
+        case 2:
+            document.getElementById("MAWeekDay").innerHTML = "Wed";
+            break;
+        case 3:
+            document.getElementById("MAWeekDay").innerHTML = "Tor (Free)";
+            break;
+        case 4:
+            document.getElementById("MAWeekDay").innerHTML = "Fry";
+            break;
+        case 5:
+            document.getElementById("MAWeekDay").innerHTML = "Sut";
+            break;
+        case 6:
+            document.getElementById("MAWeekDay").innerHTML = "Sun (Free)";
+            break;
+    }
+}
+
+function getDayOfYear(){
+    var now = new Date();
+    var start = new Date(now.getFullYear(), 0, 0);
+    var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+    var oneDay = 1000 * 60 * 60 * 24;
+    var day = Math.floor(diff / oneDay);
+    return day;
 }
 </script>
 <style>
-    div.Timer span{
+    div.MATimer{
         font-size: xx-large;
     }
 </style>
