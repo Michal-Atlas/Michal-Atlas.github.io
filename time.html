@@ -19,7 +19,12 @@ permalink: /time/
     <hr>
         <h2>Clock (Base 100)</h2>
         <div title="Hour:Minute:Second" class="MATimer">
-            <span id="MACBOH"></span>
+            <span id="Seconds"></span>
+        </div>
+    <hr>
+        <h2>Clock (Base Unicode)</h2>
+        <div title="Hour:Minute:Second" class="MATimer">
+            <span id="MACBUC"></span>
         </div>
     <hr>
 </div>
@@ -72,12 +77,15 @@ function UpdateTime() {
     }
 
     // Base 100 clock
-    MACBOH = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
-    while(MACBOH.length < 5){
-        MACBOH = 0+MACBOH;
+    Seconds = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
+    while(Seconds.length < 5){
+        Seconds = 0+Seconds;
     }
-    document.getElementById("MACBOH").innerHTML = Math.floor(MACBOH/10000) + ":" + Math.floor(MACBOH/100)%10000 + ":" + MACBOH%100;
+    document.getElementById("Seconds").innerHTML = Math.floor(Seconds/10000) + ":" + Math.floor(Seconds/100)%100 + ":" + Seconds%100;
 
+
+    // Base Unicode Clock
+    document.getElementById("MACBUC").innerHTML = "&#"+Seconds+";";
 }
 
 function getDayOfYear(){
