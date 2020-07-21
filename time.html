@@ -12,6 +12,11 @@ permalink: /time/
             <span id="MADay"></span>/<span id="MAMonth"></span>/<span id="MAYear"></span>
         </div>
     <hr>
+        <h2>Clock (% of Day)</h2>
+        <div class="MATimer">
+            <span id="MACPOD"></span>
+        </div>
+    <hr>
         <h2>Clock (Single Digit)</h2>
         <div title="Hour | Minute | Second" class="MATimer">
             <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
@@ -54,6 +59,9 @@ function UpdateTime() {
 
     // Base Unicode Clock
     document.getElementById("MACBUC").innerHTML = "&#"+Seconds+";";
+
+    // Clock % of Day
+    document.getElementById("MACPOD").innerHTML = Seconds/86400*100 + "%";
 }
 
 function getDayOfYear(){
