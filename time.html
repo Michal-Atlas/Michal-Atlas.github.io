@@ -19,8 +19,10 @@ permalink: /time/
             <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
         </div>
     <hr>
-    <div title="Hour | Minute | Second" class="MATimer"><span id="MAHour"></span><span id="MAMinute"></span><span id="MASecond"></span>
-    </div>
+        <h2>Clock (Base 100)</h2>
+        <div title="Hour:Minute:Second" class="MATimer">
+            <span id="MACBOH"></span>
+        </div>
     <hr>
 </div>
 
@@ -70,6 +72,14 @@ function UpdateTime() {
             document.getElementById("MAWeekDay").innerHTML = "Sun (Free)";
             break;
     }
+
+    // Base 100 clock
+    MACBOH = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
+    while(MACBOH.length < 5){
+        MACBOH = 0+MACBOH;
+    }
+    document.getElementById("MACBOH").innerHTML = Math.floor(MACBOH/10000) + ":" + Math.floor(MACBOH/100)%10000 + ":" + MACBOH%100;
+
 }
 
 function getDayOfYear(){
