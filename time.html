@@ -52,29 +52,8 @@ function UpdateTime() {
         document.getElementById("MAMonth").innerHTML = "Firefly Festival";
         document.getElementById("MADay").innerHTML = "";
     }
-    switch(day%7){
-        case 0:
-            document.getElementById("MAWeekDay").innerHTML = "Mun";
-            break;
-        case 1:
-            document.getElementById("MAWeekDay").innerHTML = "Tas";
-            break;
-        case 2:
-            document.getElementById("MAWeekDay").innerHTML = "Wed";
-            break;
-        case 3:
-            document.getElementById("MAWeekDay").innerHTML = "Tor (Free)";
-            break;
-        case 4:
-            document.getElementById("MAWeekDay").innerHTML = "Fry";
-            break;
-        case 5:
-            document.getElementById("MAWeekDay").innerHTML = "Sut";
-            break;
-        case 6:
-            document.getElementById("MAWeekDay").innerHTML = "Sun (Free)";
-            break;
-    }
+    dayName = ["Sun (Free)", "Mun", "Tas", "Wed", "Tor (Free)", "Fry", "Sut"]
+    document.getElementById("MAWeekDay").innerHTML = dayName[day%7];
 
     // Base 100 clock
     Seconds = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
