@@ -17,6 +17,11 @@ permalink: /time/
             <span id="MACPOD"></span>
         </div>
     <hr>
+        <h2>Clock (Fraction Hours)</h2>
+        <div class="MATimer">
+            <span id="MACFH"></span>
+        </div>
+    <hr>
         <h2>Clock (Single Digit)</h2>
         <div title="Hour | Minute | Second" class="MATimer">
             <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
@@ -62,6 +67,9 @@ function UpdateTime() {
 
     // Clock % of Day
     document.getElementById("MACPOD").innerHTML = Seconds/86400*100 + "%";
+
+    // Clock, Fraction Hours
+    document.getElementById("MACFH").innerHTML = time.getHours()+"."+ Math.round(time.getMinutes()/60*100);
 }
 
 function getDayOfYear(){
