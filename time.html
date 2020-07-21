@@ -17,13 +17,8 @@ permalink: /time/
             <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
         </div>
     <hr>
-        <h2>Clock (Base 100)</h2>
-        <div title="Hour:Minute:Second" class="MATimer">
-            <span id="Seconds"></span>
-        </div>
-    <hr>
         <h2>Clock (Base Unicode)</h2>
-        <div title="Hour:Minute:Second" class="MATimer">
+        <div class="MATimer">
             <span id="MACBUC"></span>
         </div>
     <hr>
@@ -55,13 +50,7 @@ function UpdateTime() {
     dayName = ["Sun (Free)", "Mun", "Tas", "Wed", "Tor (Free)", "Fry", "Sut"]
     document.getElementById("MAWeekDay").innerHTML = dayName[day%7];
 
-    // Base 100 clock
     Seconds = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
-    while(Seconds.length < 5){
-        Seconds = 0+Seconds;
-    }
-    document.getElementById("Seconds").innerHTML = Math.floor(Seconds/10000) + ":" + Math.floor(Seconds/100)%100 + ":" + Seconds%100;
-
 
     // Base Unicode Clock
     document.getElementById("MACBUC").innerHTML = "&#"+Seconds+";";
