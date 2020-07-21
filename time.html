@@ -6,7 +6,18 @@ permalink: /time/
 
 <div style="text-align: center; vertical-align: center">
     <hr>
-    <div title="DayOfWeek | Day/Month.Quarter/Year" class="MATimer"><span id="MAWeekDay"></span> | <span id="MADay"></span>/<span id="MAMonth"></span>/<span id="MAYear"></span></div>
+        <h2>Calendar (Normalized number of Days per Month)</h2>
+        <div title="DayOfWeek | Day/Month.Quarter/Year" class="MATimer">
+            <span id="MAWeekDay"></span> | 
+            <span id="MADay"></span>/
+            <span id="MAMonth"></span>/
+            <span id="MAYear"></span>
+        </div>
+    <hr>
+        <h2>Clock (Single Digit)</h2>
+        <div title="Hour | Minute | Second" class="MATimer">
+            <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
+        </div>
     <hr>
     <div title="Hour | Minute | Second" class="MATimer"><span id="MAHour"></span><span id="MAMinute"></span><span id="MASecond"></span>
     </div>
@@ -19,11 +30,13 @@ let unifiedRay = ['0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M
 var t = setInterval(UpdateTime, 1000);
 
 function UpdateTime() {
+    // Single Digit Clock
     let time = new Date();
-    document.getElementById("MAHour").innerHTML = unifiedRay[time.getHours()];
-    document.getElementById("MAMinute").innerHTML = unifiedRay[time.getMinutes()];
-    document.getElementById("MASecond").innerHTML = unifiedRay[time.getSeconds()];
+    document.getElementById("MACRDHour").innerHTML = unifiedRay[time.getHours()];
+    document.getElementById("MACRDMinute").innerHTML = unifiedRay[time.getMinutes()];
+    document.getElementById("MACRDSecond").innerHTML = unifiedRay[time.getSeconds()];
 
+    // Calendar (Normalized number of Days per Month)
     day = getDayOfYear()
     if (day != 365){
         document.getElementById("MAYear").innerHTML = time.getFullYear()-1970;
