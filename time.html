@@ -48,13 +48,13 @@ function UpdateTime() {
 
     // Calendar (Normalized number of Days per Month)
     day = getDayOfYear()
-    if (day != 365){
+    if (day < 365){
         document.getElementById("MAYear").innerHTML = time.getFullYear()-1970;
         document.getElementById("MAMonth").innerHTML = Math.floor(day/28)+"."+Math.floor(day/7)%4;
         document.getElementById("MADay").innerHTML = day%28;
     }else{
         document.getElementById("MAYear").innerHTML = "";
-        document.getElementById("MAMonth").innerHTML = "Firefly Festival";
+        document.getElementById("MAMonth").innerHTML = day%2==0?"Dragonfly Festival":"Firefly Festival";
         document.getElementById("MADay").innerHTML = "";
     }
     dayName = ["Sun (Free)", "Mun", "Tas", "Wed", "Tor (Free)", "Fry", "Sut"]
