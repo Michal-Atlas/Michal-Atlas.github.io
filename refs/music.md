@@ -1,7 +1,10 @@
 ---
+title: Music
 layout: page
 permalink: /refs/music/
 ---
+
+<meta http-equiv="refresh" content="0; url = https://www.last.fm/user/Michal-Atlas"/>
 
 - 5 Seconds of Summer - [Teeth](https://www.youtube.com/watch?v=JWeJHN5P-E8)
 - [BLUE](https://www.youtube.com/watch?v=htS8QX3OGlg) (Dramatical version)
