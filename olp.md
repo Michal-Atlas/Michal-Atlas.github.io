@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Blog: OLP - Ordinal Linguistic Personification"
-categories: blog
+title: "OLP - Ordinal Linguistic Personification"
+permalink: "/olp"
 ---
 
 Let's talk a bit about psychology,
