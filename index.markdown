@@ -4,15 +4,3 @@
 
 layout: post
 ---
-
-# Michal Atlas
-
-## Projects
-
-- [Blender For Mortals](/bfm) - Guide to v2.79b Blender
-- [DawnStorm](/dawnstorm) - 3D6 Pen & Paper RPG system
-
-## Other
-
-- [Ordinal Linguistic personification](/olp)
-- [GPG Key](/key.gpg)

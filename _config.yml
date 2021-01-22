@@ -28,7 +28,7 @@ github_username:  michal-atlas
 author: Michal Atlas
 
 # Build settings
-theme: jekyll-theme-hacker
+theme: minima
 plugins:
   - jekyll-feed
 
