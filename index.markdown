@@ -3,11 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Homepage
+permalink: /
 ---
 # Projects
 
-- [Blender For Mortals](/bfm) - Guide to v2.79b Blender
-- [DawnStorm](/dawnstorm) - 3D6 Pen & Paper RPG system
+- <a href="bfm.michal-atlas.co" target="_blank">Blender For Mortals</a> - Guide to v2.79b Blender
+- <a href="dawnstorm.michal-atlas.co">DawnStorm</a> - 3D6 Pen & Paper RPG system
 
 # Other
 
