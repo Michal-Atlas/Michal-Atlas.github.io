@@ -8,8 +8,8 @@ permalink: /
 ---
 # Projects
 
-- <a href="bfm.michal-atlas.co" target="_blank">Blender For Mortals</a> - Guide to v2.79b Blender
-- <a href="dawnstorm.michal-atlas.co">DawnStorm</a> - 3D6 Pen & Paper RPG system
+- <a href="https://bfm.michal-atlas.co" target="_blank">Blender For Mortals</a> - Guide to v2.79b Blender
+- <a href="https://dawnstorm.michal-atlas.co">DawnStorm</a> - 3D6 Pen & Paper RPG system
 
 # Other
 
