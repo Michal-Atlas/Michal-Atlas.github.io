@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Killing The Mansion: Chapter 1"
-category: stories killing-the-mansion
+permalink: /writing/ktm-c1/
 ---
 
 # Killing The Mansion: Chapter 1 - The High Life

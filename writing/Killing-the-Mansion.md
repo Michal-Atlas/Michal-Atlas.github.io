@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Killing The Mansion"
-category: stories killing-the-mansion
+permalink: /writing/ktm/
 ---
 
 # Killing the Mansion

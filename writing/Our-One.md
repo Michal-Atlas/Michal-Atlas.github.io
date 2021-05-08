@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Our One"
-category: stories poems
+permalink: /writing/oo/
 ---
 
 # Our One

@@ -1,7 +1,6 @@
 ---
-layout: post
-title: "Blog: OLP - Ordinal Linguistic Personification"
-categories: blog
+layout: page
+title: "OLP - Ordinal Linguistic Personification"
 permalink: /olp/
 ---
 

@@ -6,6 +6,7 @@ layout: home
 title: Homepage
 permalink: /
 ---
+
 # Projects
 
 - <a href="https://bfm.michal-atlas.co" target="_blank">Blender For Mortals</a> - Guide to v2.79b Blender
@@ -14,4 +15,13 @@ permalink: /
 # Other
 
 - [Ordinal Linguistic personification](/olp)
+- [Music](/music)
 - [GPG Key](/key.gpg)
+
+# Writing
+
+- [Killing the Mansion](/writing/ktm)
+- [Killing the Mansion - Chapter 1](/writing/ktm-c1)
+- [Our One](/writing/oo)
+- [The Will To Tango](/writing/wtt)
+- [When Fire Reigns](/writing/wfr)

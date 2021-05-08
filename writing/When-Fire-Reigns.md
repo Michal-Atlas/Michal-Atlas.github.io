@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When fire Reigns"
-category: stories
+permalink: /writing/wfr
 ---
 
 # When Fire reigns above old friends lie below

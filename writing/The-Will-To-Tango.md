@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Will to Tango"
-category: stories killing-the-mansion
+permalink: /writing/wtt
 ---
 
 # The Will to Tango
