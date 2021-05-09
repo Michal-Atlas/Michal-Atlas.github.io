@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Will to Tango"
 permalink: /writing/wtt
 ---

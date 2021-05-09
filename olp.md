@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "OLP - Ordinal Linguistic Personification"
 permalink: /olp/
 ---

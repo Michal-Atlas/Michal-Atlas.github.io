@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Killing The Mansion"
 permalink: /writing/ktm/
 ---

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Music Adventures"
 permalink: /music/
 ---

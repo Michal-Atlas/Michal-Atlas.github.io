@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Our One"
 permalink: /writing/oo/
 ---

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "When fire Reigns"
 permalink: /writing/wfr
 ---
