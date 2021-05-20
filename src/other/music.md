@@ -1,8 +1,3 @@
----
-title: "Music Adventures"
-permalink: /music/
----
-
 # The High Seas
 
 <iframe src="https://www.youtube-nocookie.com/embed/lTmkU6Y86ys" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -20,7 +15,7 @@ permalink: /music/
 
 <iframe src="https://www.youtube-nocookie.com/embed/_kEFwjXiIMs" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Warrior's Cry)"
+# Warrior's Cry
 
 <iframe src="https://www.youtube-nocookie.com/embed/-le76r_bKfE" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe src="https://www.youtube-nocookie.com/embed/EhUAaGds2_w" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

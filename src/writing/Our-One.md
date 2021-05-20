@@ -1,8 +1,3 @@
----
-title: "Our One"
-permalink: /writing/oo/
----
-
 # Our One
 
 Do you see that wandering soul?

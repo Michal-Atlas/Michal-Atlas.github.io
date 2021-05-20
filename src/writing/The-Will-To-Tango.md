@@ -1,8 +1,3 @@
----
-title: "The Will to Tango"
-permalink: /writing/wtt
----
-
 # The Will to Tango
 
 "So... what do we do about the book?" said Cordelia looking around the dimly lit room, where several characters sat each in a deep leather armchair, each of their faces illuminated by a fire shimmering in the corner of the room.

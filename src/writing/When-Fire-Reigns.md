@@ -1,8 +1,3 @@
----
-title: "When fire Reigns"
-permalink: /writing/wfr
----
-
 # When Fire reigns above old friends lie below
 
 Thousands of years of ancestry now lie uncovered, closer than ever, glaring him in the eyes.

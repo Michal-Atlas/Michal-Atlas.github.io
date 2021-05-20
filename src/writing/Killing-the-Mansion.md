@@ -1,8 +1,3 @@
----
-title: "Killing The Mansion"
-permalink: /writing/ktm/
----
-
 # Killing the Mansion
 
 It is often claimed that one's life flashes before one's eyes when they are dying. And as I sit here with all these wounds, it seems to be true, at least partially, because I indeed am dying, but my life didn't "flash before my very eyes", only the events of the last six hours. It began at one of the many extravagant, some may call them quite decadent, masked soiree. During one of many such a party, befell me a curious encounter. Footsteps I did hear, very calculated, profoundly precise. The type of profoundness that disturbs the mind and seizes attention. Soon the proprietor of the disconcerting step showed herself. She approached and introduced herself as Elisabeth maiden to the Jadewill mansion. I retorted as is expected of me in this company. I was bid to be a guest at yet another gala and of course, with my then lavish manners, I accepted hastily. As soon as I did, without a second word the maiden walked away. Disappearing in the crowd as abruptly as she had come. At the time I thought nothing of it.

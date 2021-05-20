@@ -1,9 +1,3 @@
----
-layout: page
-title: Time
-permalink: /time/
----
-
 <div style="text-align: center; vertical-align: center">
     <hr>
         <h2>Calendar (4 Weeks per Month)</h2>

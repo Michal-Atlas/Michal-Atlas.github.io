@@ -1,8 +1,3 @@
----
-title: "OLP - Ordinal Linguistic Personification"
-permalink: /olp/
----
-
 Let's talk a bit about psychology,
 many of you might've heard about Synesthesia,
 it's when someone has two senses somewhat connected/mixed.

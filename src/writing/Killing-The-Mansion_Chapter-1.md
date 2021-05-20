@@ -1,8 +1,3 @@
----
-title: "Killing The Mansion: Chapter 1"
-permalink: /writing/ktm-c1/
----
-
 # Killing The Mansion: Chapter 1 - The High Life
 
 An old white crow roosts upon the great old clock as the chime of Big Ben fills the streets of London.
