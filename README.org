@@ -1,5 +1,8 @@
 #+TITLE: Michal Atlas
 
+#+HTML_HEAD: <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/beuron" type="text/css"/>
+#+HTML_HEAD: <style> body { font-family: BeuronRegular } </style>
+
 * Projects
 
 - [[https://bfm.michal-atlas.xyz][Blender For Mortals]] - Guide to v2.79b Blender
