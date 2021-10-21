@@ -5,7 +5,7 @@
 
 * Projects
 
-- [[https://bfm.michal-atlas.xyz][[x] Blender For Mortals]] - Guide to v2.79b Blender
+- [x] [[https://bfm.michal-atlas.xyz][Blender For Mortals]] - Guide to v2.79b Blender
 - [[https://dawnstorm.michal-atlas.xyz][DawnStorm]] - 3D6 Pen & Paper RPG system
 - [[https://mlxan.michal-atlas.xyz][Moonlight Xanadu]] - Some writings and stories I've been working on
 - Carcass Mountain - A system-free RPG module
