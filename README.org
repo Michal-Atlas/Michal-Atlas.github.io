@@ -1,13 +1,14 @@
-#+TITLE: Michal Atlas
-
 #+HTML_HEAD: <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/beuron" type="text/css"/>
+
+#+TITLE: Michal Atlas
 #+HTML_HEAD: <style> body { font-family: BeuronRegular } </style>
 
 * Projects
 
-- [[https://bfm.michal-atlas.xyz][Blender For Mortals]] - Guide to v2.79b Blender
+- [[https://bfm.michal-atlas.xyz][[x] Blender For Mortals]] - Guide to v2.79b Blender
 - [[https://dawnstorm.michal-atlas.xyz][DawnStorm]] - 3D6 Pen & Paper RPG system
 - [[https://mlxan.michal-atlas.xyz][Moonlight Xanadu]] - Some writings and stories I've been working on
+- Carcass Mountain - A system-free RPG module
 
 * Setup
 | Var    | Value               |
@@ -18,6 +19,10 @@
 | Style  | Windows 9X          |
 
 * Conlangs
+- Gehre'harne :: NaeHiGra Na'eGra GaraNari. HraNā Narag'e GaX'e HriNae HereNai.
+- Roʃ'foke :: Geraʃmo joroʃ joregei juʃoʊhei raʃo. => The leader of the fire village is going south.
+- Visuth :: Ee, lixaθe tiks sala haŋalo toxoks. Naŋaʃa sala xoxʃxa hoʃa. Lixaθe ŋa? => Hey, wanna stop and eat a snack? I have some fish and some animal. Which (or) want?
+
 ** Conwords
 - Butterfly Defect :: When a big event or something that has had tons of effort poured into it, ultimately changes nothing.
 
