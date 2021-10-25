@@ -3,9 +3,17 @@
 #+TITLE: Michal Atlas
 #+HTML_HEAD: <style> body { font-family: BeuronRegular } </style>
 
+* Feed
+#+BEGIN_SRC sh :exports results :results raw
+ls feed/ -t | while read -r f; do
+    printf "** %s\n" "$(sed "s|-| |g; s|\.org||" <<< "$f")";
+    cat feed/$f;
+done;
+#+END_SRC
+
 * Projects
 
-- [x] [[https://bfm.michal-atlas.xyz][Blender For Mortals]] - Guide to v2.79b Blender
+- [[https://bfm.michal-atlas.xyz][Blender For Mortals]] - Guide to v2.79b Blender
 - [[https://dawnstorm.michal-atlas.xyz][DawnStorm]] - 3D6 Pen & Paper RPG system
 - [[https://mlxan.michal-atlas.xyz][Moonlight Xanadu]] - Some writings and stories I've been working on
 - Carcass Mountain - A system-free RPG module
@@ -19,6 +27,9 @@
 | Style  | Windows 9X          |
 
 * Conlangs
+** Klamura
+#+INCLUDE: Klamura.org :minlevel 3
+
 - Gehre'harne :: NaeHiGra Na'eGra GaraNari. HraNā Narag'e GaX'e HriNae HereNai.
 - Roʃ'foke :: Geraʃmo joroʃ joregei juʃoʊhei raʃo. => The leader of the fire village is going south.
 - Visuth :: Ee, lixaθe tiks sala haŋalo toxoks. Naŋaʃa sala xoxʃxa hoʃa. Lixaθe ŋa? => Hey, wanna stop and eat a snack? I have some fish and some animal. Which (or) want?
