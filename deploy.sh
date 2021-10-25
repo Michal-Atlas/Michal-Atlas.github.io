@@ -2,7 +2,7 @@
 set -euox pipefail
 
 git worktree add /tmp/gh-pages gh-pages
-pandoc README.org -o README.html -s
+emacs README.org --batch --kill -f 'org-html-export-to-html'
 mv README.html /tmp/gh-pages/index.html
 cd /tmp/gh-pages
 git add .
