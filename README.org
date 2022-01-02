@@ -1,7 +1,8 @@
+# -*- after-save-hook: org-html-export-as-html; -*-
+#+TITLE: Michal Atlas
 #+HTML_HEAD: <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/beuron" type="text/css"/>
 #+HTML_HEAD: <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/xolonium" type="text/css"/>
-
-#+TITLE: Michal Atlas
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 #+HTML_HEAD: <style> h1 { font-family: BeuronRegular } body { font-family: XoloniumRegular } </style>
 
 * Projects
@@ -12,12 +13,12 @@
 - Carcass Mountain - A system-free RPG module
 
 * Setup
-| Var    | Value               |
-|--------+---------------------|
-| Editor | Emacs               |
-| Distro | OpenSUSE Tumbleweed |
-| DE     | Plasma (+ Nord Decor) (+ Tiling Script) |
-| Style  | Windows 9X          |
+| Var    | Value |
+|--------+-------|
+| Editor | Emacs |
+| Distro | GUIX  |
+| DE     | i3    |
+| Shell  | ZSH   |
 
 * Conlangs
 - Gehre'harne :: NaeHiGra Na'eGra GaraNari. HraNā Narag'e GaX'e HriNae HereNai.
@@ -26,9 +27,6 @@
 
 ** Conwords
 - Butterfly Defect :: When a big event or something that has had tons of effort poured into it, ultimately changes nothing.
-
-** Klamura
-#+INCLUDE: Klamura.org
 
 * Time
 
@@ -113,36 +111,3 @@ function getDayOfYear(){
 </style>
 
 #+END_EXPORT
-
-* Feed
-** nightmare daughter
-I tend to suffer from nightmares,
-the last one was very gruesome.
-I was a black man, for some reason,
-seemed a bit like those that you would find in zombie fiction,
-and that would make sense, since there were a lot of zombies.
-
-Strangely enough, none of them attacked me.
-Instead, i drove from tragedy to tragedy in an old rusty yellow bus.
-There was one event that kept reappearing.
-"My daughter" (I don't have one), was trapped in a glass cage.
-The glass was the type you'd see in gyms, with the metal grid woven into it.
-And a man stood beside this scene, and explained to me.
-
-#+BEGIN_QUOTE
-Your daughter isn't pleased that you have all your limbs.
-Your daughter isn't pleased that you still have your head.
-Your daughter isn't pleased that you still have both your eyes.
-...
-...
-#+END_QUOTE
-
-And like you may have in a video-game, she ran against the glass cage,
-her feet just sliding on the ground, she paid no notice to anything around her.
-
-** is this a blog
-Okay, people have convinced me,
-they keep telling me how cool my thoughts are,
-so... meh, I give up, here you go,
-you asked for it, imma post em' here at least,
-so I don't have to send it to every person individually.
