@@ -16,6 +16,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: gh-pages
+          
+       # Runs a single command using the runners shell
+      - name: Trans
+        run: tree
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
