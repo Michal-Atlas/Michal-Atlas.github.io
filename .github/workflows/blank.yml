@@ -13,14 +13,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
       - uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          
-       # Runs a single command using the runners shell
-      - name: Trans
-        run: tree
+      
+      - name: Build
+        run: |
+          mkdir -p build
+          emacs --batch README.org -f 'org-html-export-to-html'
+          mv README.html build/tree
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: ./deploy.sh
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
