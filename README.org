@@ -17,7 +17,7 @@
 |--------+-------|
 | Editor | Emacs |
 | Distro | GUIX  |
-| DE     | i3    |
+| DE     | GNOME |
 | Shell  | ZSH   |
 
 * Conlangs
