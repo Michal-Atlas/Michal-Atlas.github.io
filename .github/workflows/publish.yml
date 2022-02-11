@@ -15,12 +15,25 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
         uses: actions/checkout@v2
-      
-      - name: Set up Emacs
-        uses: purcell/setup-emacs@v3.0
+
+      - name: Cache Guix and Store
+        id: cache-guix
+        uses: actions/cache@v2
         with:
-          version: 27.2
-      
+          path: |
+            /gnu
+            .guix-profile
+          key: ${{ runner.os }}-store
+        
+      - name: Install GNU Guix
+        uses: PromyLOPh/guix-install-action@v1.2.2
+        if: steps.cache-guix.outputs.cache-hit != 'true'
+
+      - name: Install Emacs-Next
+        run: |
+          guix pull
+          guix install emacs-next
+
       - name: Build
         run: |
           mkdir -p build
