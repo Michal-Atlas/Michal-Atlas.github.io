@@ -5,44 +5,33 @@ on:
     branches: [ master ]
 
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v2
 
-      - name: Cache Guix and Store
-        id: cache-guix
-        uses: actions/cache@v2
-        with:
-          path: |
-            /gnu
-            /var/guix
-            .guix-profile
-          key: ${{ runner.os }}-store
-        
-      - name: Install GNU Guix
-        uses: PromyLOPh/guix-install-action@v1.2.2
-        if: steps.cache-guix.outputs.cache-hit != 'true'
-
-      - name: Install Emacs-Next
+      - name: Configure
         run: |
-          guix pull
-          guix install emacs-next
-
-      - name: Build
+          sudo apt update
+          sudo apt install emacs
+        
+      - name: make
         run: |
           mkdir -p build
-          emacs --batch README.org -f 'org-html-export-to-html'
-          mv README.html build/tree
+          emacs --batch --eval '
+          (setq org-publish-project-alist
+          '(("org"
+          :base-directory "~/"
+          :publishing-directory "~/publish"
+          :publishing-function org-html-publish-to-html
+          :section-numbers nil
+          :with-toc t
+          :html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.css\">")))
+          (org-publish "org")'
 
-      - name: Deploy
+      - name: make install
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+          folder: publish # The folder the action should deploy.
