@@ -1,5 +1,5 @@
 (require 'org)
-(require 'ox-html)
+(require 'ox-md)
 
 (setq org-publish-project-alist
       '(("org"
