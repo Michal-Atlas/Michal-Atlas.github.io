@@ -24,7 +24,7 @@ jobs:
           
       - name: make
         run: |
-          mkdir -p build
+          mkdir -p publish
           emacs -Q --batch -l ox-gfm/ox-gfm.el -l publishing.el --eval '(org-publish "org")'
 
       - name: make install
