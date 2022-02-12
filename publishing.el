@@ -4,7 +4,8 @@
 (setq org-publish-project-alist
       '(("org"
 	 :base-directory "."
-	 :base-extension "org"
 	 :publishing-directory "publish"
-	 :publishing-function org-html-export-to-html
-	 :with-toc t)))
+	 :publishing-function org-html-publish-to-html
+	 :section-numbers t
+	 :with-toc t
+	 :html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.css\">")))
