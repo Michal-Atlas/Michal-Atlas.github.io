@@ -17,9 +17,7 @@ jobs:
           sudo apt install emacs-nox
         
       - name: make
-        run: |
-          mkdir -p publish
-          emacs -Q --batch -l publishing.el --eval '(org-publish "org")'
+        run: emacs -Q --batch -l publishing.el --eval '(org-publish "org")'
 
       - name: make install
         uses: JamesIves/github-pages-deploy-action@v4.2.3
