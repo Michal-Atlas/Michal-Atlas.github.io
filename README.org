@@ -1,8 +1,5 @@
 # -*- after-save-hook: org-html-export-to-html; -*-
 #+TITLE: Michal Atlas
-#+HTML_HEAD: <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/beuron" type="text/css"/>
-#+HTML_HEAD: <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/xolonium" type="text/css"/>
-#+HTML_HEAD: <style> h1 { font-family: BeuronRegular } body { font-family: XoloniumRegular } </style>
 
 * Projects
 

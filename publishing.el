@@ -5,7 +5,6 @@
       '(("org"
 	 :base-directory "."
 	 :publishing-directory "publish"
-	 :publishing-function org-html-publish-to-html
+	 :publishing-function org-md-export-to-markdown
 	 :section-numbers t
-	 :with-toc t
-	 :html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.css\">")))
+	 :with-toc t)))
