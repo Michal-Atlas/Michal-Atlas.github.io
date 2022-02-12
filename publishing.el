@@ -5,6 +5,6 @@
       '(("org"
 	 :base-directory "."
 	 :publishing-directory "publish"
-	 :publishing-function org-md-publish-to-markdown
+	 :publishing-function org-md-export-to-markdown
 	 :section-numbers t
 	 :with-toc t)))
