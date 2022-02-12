@@ -1,0 +1,128 @@
+---
+title: Michal Atlas
+---
+
+Projects
+========
+
+-   [Blender For Mortals](https://bfm.michal-atlas.xyz) - Guide to
+    v2.79b Blender
+-   [DawnStorm](https://dawnstorm.michal-atlas.xyz) - 3D6 Pen & Paper
+    RPG system
+-   [Moonlight Xanadu](https://mlxan.michal-atlas.xyz) - Some writings
+    and stories I\'ve been working on
+-   Carcass Mountain - A system-free RPG module
+
+Setup
+=====
+
+  Var      Value
+  -------- -------
+  Editor   Emacs
+  Distro   GUIX
+  DE       GNOME
+  Shell    ZSH
+
+Conlangs
+========
+
+Gehre\'harne
+:   NaeHiGra Na\'eGra GaraNari. HraNā Narag\'e GaX\'e HriNae HereNai.
+
+Roʃ\'foke
+:   Geraʃmo joroʃ joregei juʃoʊhei raʃo. =\> The leader of the fire
+    village is going south.
+
+Visuth
+:   Ee, lixaθe tiks sala haŋalo toxoks. Naŋaʃa sala xoxʃxa hoʃa. Lixaθe
+    ŋa? =\> Hey, wanna stop and eat a snack? I have some fish and some
+    animal. Which (or) want?
+
+Conwords
+--------
+
+Butterfly Defect
+:   When a big event or something that has had tons of effort poured
+    into it, ultimately changes nothing.
+
+Time
+====
+
+
+<div style="text-align: center; vertical-align: center">
+    <hr>
+        <div title="DayOfWeek | Day/Month.Quarter/Year" class="MATimer">
+            <span id="MAWeekDay"></span> | 
+            <span id="MADay"></span>/<span id="MAMonth"></span>/<span id="MAYear"></span>
+        </div>
+    <hr>
+        <div class="MATimer">
+            <span id="MACPOD"></span>
+        </div>
+    <hr>
+        <div class="MATimer">
+            <span id="MACFH"></span>
+        </div>
+    <hr>
+        <div title="Hour | Minute | Second" class="MATimer">
+            <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
+        </div>
+    <hr>
+        <div class="MATimer">
+            <span id="MACBUC"></span>
+        </div>
+    <hr>
+</div>
+
+<script>
+let unifiedRay = ['0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'Θ', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.0', '.A', '.B', '.C', '.D', '.E', '.F', '.G', '.H', '.I', '.K', '.L', '.M', '.N', '.Θ', '.P', '.R', '.S', '.T', '.U', '.V', '.X', '.Y', '.Z', '.1', '.2', '.3', '.4', '.5', '.6', '.7', '.8', '.9'];
+
+var t = setInterval(UpdateTime, 1000);
+
+function UpdateTime() {
+    // Single Digit Clock
+    let time = new Date();
+    document.getElementById("MACRDHour").innerHTML = unifiedRay[time.getHours()];
+    document.getElementById("MACRDMinute").innerHTML = unifiedRay[time.getMinutes()];
+    document.getElementById("MACRDSecond").innerHTML = unifiedRay[time.getSeconds()];
+
+    // Calendar (Normalized number of Days per Month)
+    day = getDayOfYear()
+    if (day < 365){
+        document.getElementById("MAYear").innerHTML = time.getFullYear()-1970;
+        document.getElementById("MAMonth").innerHTML = Math.floor(day/28)+"."+Math.floor(day/7)%4;
+        document.getElementById("MADay").innerHTML = day%28;
+    }else{
+        document.getElementById("MAYear").innerHTML = "";
+        document.getElementById("MAMonth").innerHTML = day%2==0?"Dragonfly Festival":"Firefly Festival";
+        document.getElementById("MADay").innerHTML = "";
+    }
+    dayName = ["Sun (Free)", "Mun", "Tas", "Wed", "Tor (Free)", "Fry", "Sut"]
+    document.getElementById("MAWeekDay").innerHTML = dayName[day%7];
+
+    Seconds = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
+
+    // Base Unicode Clock
+    document.getElementById("MACBUC").innerHTML = "&#"+Seconds+";";
+
+    // Clock % of Day
+    document.getElementById("MACPOD").innerHTML = Seconds/86400*100 + "%";
+
+    // Clock, Fraction Hours
+    document.getElementById("MACFH").innerHTML = time.getHours()+"."+ Math.round(time.getMinutes()/60*100);
+}
+
+function getDayOfYear(){
+    var now = new Date();
+    var start = new Date(now.getFullYear(), 0, 0);
+    var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+    var oneDay = 1000 * 60 * 60 * 24;
+    var day = Math.floor(diff / oneDay);
+    return day;
+}
+</script>
+<style>
+    div.MATimer{
+        font-size: xx-large;
+    }
+</style>
