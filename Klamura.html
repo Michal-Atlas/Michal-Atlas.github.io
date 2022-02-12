@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-07 Mon 20:11 -->
+<!-- 2022-02-12 Sat 20:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Michal Atlas</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -160,19 +160,6 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -192,67 +179,187 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/beuron" type="text/css"/>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/xolonium" type="text/css"/>
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-<style> h1 { font-family: BeuronRegular } body { font-family: XoloniumRegular } </style>
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">Michal Atlas</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8309080">1. Projects</a></li>
-<li><a href="#org9d034cb">2. Setup</a></li>
-<li><a href="#org867d5a2">3. Conlangs</a>
-<ul>
-<li><a href="#org2a9c2b0">3.1. Conwords</a></li>
-</ul>
-</li>
-<li><a href="#org3c79532">4. Time</a></li>
+<li><a href="#org46adec0">1. General</a></li>
+<li><a href="#orgd4c0620">2. Script</a></li>
+<li><a href="#org991471b">3. Pronouns</a></li>
+<li><a href="#org011c175">4. Word List</a></li>
 </ul>
 </div>
 </div>
-
-<div id="outline-container-org8309080" class="outline-2">
-<h2 id="org8309080"><span class="section-number-2">1</span> Projects</h2>
+<div id="outline-container-org46adec0" class="outline-2">
+<h2 id="org46adec0"><span class="section-number-2">1</span> General</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><a href="https://bfm.michal-atlas.xyz">Blender For Mortals</a> - Guide to v2.79b Blender</li>
-<li><a href="https://dawnstorm.michal-atlas.xyz">DawnStorm</a> - 3D6 Pen &amp; Paper RPG system</li>
-<li><a href="https://mlxan.michal-atlas.xyz">Moonlight Xanadu</a> - Some writings and stories I've been working on</li>
-<li>Carcass Mountain - A system-free RPG module</li>
+<li>Klamuran works on a stack principal</li>
+<li>Every sentence builds up a sort of object that is interpreted at the end</li>
+<li>Every word takes N objects from the stack and applies some sort of transformation to them</li>
+<li>Some words are shared between a Noun and Verb form, this doesn't brake determinism since, verbs are always the last symbol in a sentence thus followed by a sentence separator</li>
+<li>An apostrophe after a character does one of two things based on it's type
+<ul class="org-ul">
+<li>Vowel: The sound is slightly elongated</li>
+<li>Consonant: The sound is repeated with an inserted glotal stop</li>
+</ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org9d034cb" class="outline-2">
-<h2 id="org9d034cb"><span class="section-number-2">2</span> Setup</h2>
+<div id="outline-container-orgd4c0620" class="outline-2">
+<h2 id="orgd4c0620"><span class="section-number-2">2</span> Script</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+I hadn't managed to digitize it yet, but here is the list of represented sounds.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Anywhere/If at end</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">x</td>
+</tr>
+
+<tr>
+<td class="org-left">o/os</td>
+</tr>
+
+<tr>
+<td class="org-left">a</td>
+</tr>
+
+<tr>
+<td class="org-left">(z/s)/dsho</td>
+</tr>
+
+<tr>
+<td class="org-left">(r/l)</td>
+</tr>
+
+<tr>
+<td class="org-left">tz</td>
+</tr>
+
+<tr>
+<td class="org-left">k</td>
+</tr>
+
+<tr>
+<td class="org-left">n</td>
+</tr>
+
+<tr>
+<td class="org-left">i</td>
+</tr>
+
+<tr>
+<td class="org-left">e</td>
+</tr>
+
+<tr>
+<td class="org-left">p</td>
+</tr>
+
+<tr>
+<td class="org-left">t</td>
+</tr>
+
+<tr>
+<td class="org-left">u</td>
+</tr>
+
+<tr>
+<td class="org-left">m</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org991471b" class="outline-2">
+<h2 id="org991471b"><span class="section-number-2">3</span> Pronouns</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Pronoun words are like variables,
+a user may save an object to it to then later recall it
+without having to specify it in its entirety.
+</p>
+
+<p>
+The word <code>Tzo</code> takes two arguments,
+returning the first, but assigning a reference to it to the second.
+</p>
+
+<pre class="example">
+Ranios Nezetzios Ka Tzo Xaze. (The Revered Creature was killed. + Assigned "Revered Creature" to Ka.)
+Keos Ka Xaze. (I killed 'it'.)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org011c175" class="outline-2">
+<h2 id="org011c175"><span class="section-number-2">4</span> Word List</h2>
+<div class="outline-text-2" id="text-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -263,142 +370,88 @@
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Var</th>
-<th scope="col" class="org-left">Value</th>
+<th scope="col" class="org-left">Word</th>
+<th scope="col" class="org-left">Meaning (Noun/Verb)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-left">Editor</td>
-<td class="org-left">Emacs</td>
+<td class="org-left">Klamura</td>
+<td class="org-left">Human</td>
 </tr>
 
 <tr>
-<td class="org-left">Distro</td>
-<td class="org-left">GUIX</td>
+<td class="org-left">To'n</td>
+<td class="org-left">Language / Say</td>
 </tr>
 
 <tr>
-<td class="org-left">DE</td>
-<td class="org-left">GNOME</td>
+<td class="org-left">Mokezios</td>
+<td class="org-left">Dwelling</td>
 </tr>
 
 <tr>
-<td class="org-left">Shell</td>
-<td class="org-left">ZSH</td>
+<td class="org-left">Ranios</td>
+<td class="org-left">Animal</td>
+</tr>
+
+<tr>
+<td class="org-left">Xari</td>
+<td class="org-left">Friend</td>
+</tr>
+
+<tr>
+<td class="org-left">Xudsho</td>
+<td class="org-left">Cute / Seduce</td>
+</tr>
+
+<tr>
+<td class="org-left">Tzo</td>
+<td class="org-left"><a href="#org991471b">3</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Nezetzios</td>
+<td class="org-left">Revered Being / To Revere</td>
+</tr>
+
+<tr>
+<td class="org-left">Petzuos</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Saos</td>
+<td class="org-left">Day / Work</td>
+</tr>
+
+<tr>
+<td class="org-left">Ka</td>
+<td class="org-left">Usually used for 'Object' pronoun</td>
+</tr>
+
+<tr>
+<td class="org-left">Xaze</td>
+<td class="org-left">Dead / Kill</td>
+</tr>
+
+<tr>
+<td class="org-left">Kaseos</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Keos</td>
+<td class="org-left">Me</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-
-<div id="outline-container-org867d5a2" class="outline-2">
-<h2 id="org867d5a2"><span class="section-number-2">3</span> Conlangs</h2>
-<div class="outline-text-2" id="text-3">
-<dl class="org-dl">
-<dt>Gehre'harne</dt><dd>NaeHiGra Na'eGra GaraNari. HraNā Narag'e GaX'e HriNae HereNai.</dd>
-<dt>Roʃ'foke</dt><dd>Geraʃmo joroʃ joregei juʃoʊhei raʃo. =&gt; The leader of the fire village is going south.</dd>
-<dt>Visuth</dt><dd>Ee, lixaθe tiks sala haŋalo toxoks. Naŋaʃa sala xoxʃxa hoʃa. Lixaθe ŋa? =&gt; Hey, wanna stop and eat a snack? I have some fish and some animal. Which (or) want?</dd>
-</dl>
-</div>
-
-<div id="outline-container-org2a9c2b0" class="outline-3">
-<h3 id="org2a9c2b0"><span class="section-number-3">3.1</span> Conwords</h3>
-<div class="outline-text-3" id="text-3-1">
-<dl class="org-dl">
-<dt>Butterfly Defect</dt><dd>When a big event or something that has had tons of effort poured into it, ultimately changes nothing.</dd>
-</dl>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org3c79532" class="outline-2">
-<h2 id="org3c79532"><span class="section-number-2">4</span> Time</h2>
-<div class="outline-text-2" id="text-4">
-
-<div style="text-align: center; vertical-align: center">
-    <hr>
-        <div title="DayOfWeek | Day/Month.Quarter/Year" class="MATimer">
-            <span id="MAWeekDay"></span> | 
-            <span id="MADay"></span>/<span id="MAMonth"></span>/<span id="MAYear"></span>
-        </div>
-    <hr>
-        <div class="MATimer">
-            <span id="MACPOD"></span>
-        </div>
-    <hr>
-        <div class="MATimer">
-            <span id="MACFH"></span>
-        </div>
-    <hr>
-        <div title="Hour | Minute | Second" class="MATimer">
-            <span id="MACRDHour"></span><span id="MACRDMinute"></span><span id="MACRDSecond"></span>
-        </div>
-    <hr>
-        <div class="MATimer">
-            <span id="MACBUC"></span>
-        </div>
-    <hr>
-</div>
-
-<script>
-let unifiedRay = ['0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'Θ', 'P', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.0', '.A', '.B', '.C', '.D', '.E', '.F', '.G', '.H', '.I', '.K', '.L', '.M', '.N', '.Θ', '.P', '.R', '.S', '.T', '.U', '.V', '.X', '.Y', '.Z', '.1', '.2', '.3', '.4', '.5', '.6', '.7', '.8', '.9'];
-
-var t = setInterval(UpdateTime, 1000);
-
-function UpdateTime() {
-    // Single Digit Clock
-    let time = new Date();
-    document.getElementById("MACRDHour").innerHTML = unifiedRay[time.getHours()];
-    document.getElementById("MACRDMinute").innerHTML = unifiedRay[time.getMinutes()];
-    document.getElementById("MACRDSecond").innerHTML = unifiedRay[time.getSeconds()];
-
-    // Calendar (Normalized number of Days per Month)
-    day = getDayOfYear()
-    if (day < 365){
-        document.getElementById("MAYear").innerHTML = time.getFullYear()-1970;
-        document.getElementById("MAMonth").innerHTML = Math.floor(day/28)+"."+Math.floor(day/7)%4;
-        document.getElementById("MADay").innerHTML = day%28;
-    }else{
-        document.getElementById("MAYear").innerHTML = "";
-        document.getElementById("MAMonth").innerHTML = day%2==0?"Dragonfly Festival":"Firefly Festival";
-        document.getElementById("MADay").innerHTML = "";
-    }
-    dayName = ["Sun (Free)", "Mun", "Tas", "Wed", "Tor (Free)", "Fry", "Sut"]
-    document.getElementById("MAWeekDay").innerHTML = dayName[day%7];
-
-    Seconds = time.getSeconds() + time.getMinutes()*60 + time.getHours()*60*60;
-
-    // Base Unicode Clock
-    document.getElementById("MACBUC").innerHTML = "&#"+Seconds+";";
-
-    // Clock % of Day
-    document.getElementById("MACPOD").innerHTML = Seconds/86400*100 + "%";
-
-    // Clock, Fraction Hours
-    document.getElementById("MACFH").innerHTML = time.getHours()+"."+ Math.round(time.getMinutes()/60*100);
-}
-
-function getDayOfYear(){
-    var now = new Date();
-    var start = new Date(now.getFullYear(), 0, 0);
-    var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
-    var oneDay = 1000 * 60 * 60 * 24;
-    var day = Math.floor(diff / oneDay);
-    return day;
-}
-</script>
-<style>
-    div.MATimer{
-        font-size: xx-large;
-    }
-</style>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2022-02-07 Mon 20:11</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2022-02-12 Sat 20:16</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
