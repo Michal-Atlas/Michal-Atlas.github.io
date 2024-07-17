@@ -1,0 +1,33 @@
+<div><h1 id="time"></h1></div>
+
+<style>
+body { text-align: center; }
+div {
+  margin: 50vh;
+  height: 100vh;
+}
+h1 {
+  margin: auto;
+  width: auto;
+}
+</style>
+<script>
+const time = document.getElementById("time")
+const meet = 1721367000000
+const minute = 60
+const hour = 60 * minute
+const day = 24 * hour
+const update = () => {
+  now = new Date()
+  span = Math.floor((meet - now) / 1000)
+  d = Math.floor(span / day)
+  span = span - day * d
+  h = Math.floor(span / hour)
+  span = span - hour * h
+  m = Math.floor(span / minute)
+  span = span - minute * m
+  s = span
+  time.innerText = d  + " Day and " + h + ":" + m + ":" + s
+}
+setInterval(update, 1000)
+</script>
